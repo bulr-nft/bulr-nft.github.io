@@ -1,0 +1,147 @@
+{
+  "settings": {
+    "name": "Site 2023-12-22 12:24",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.8",
+    "siteFonts": [],
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://bulr-nft.github.io/sitemap.xml",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://bulr-nft.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "imageResize": true,
+    "usedWebp": true,
+    "favicon": false,
+    "mbrsiteDomain": "v0qgrzdqkx",
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.8"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Blur NFT™ | Home Official Site",
+        "meta_descr": "Sweep NFTs across multiple marketplaces, snipe reveals faster than others, and manage your portfolio with advanced analytics. Zero fees.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://blur-nft.hpage.com/\"><img src=\"@PROJECT_PATH@/assets/images/blurnft.png\" alt=\"Blur NFT\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "tZ9hBAc0BG",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image04-0"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"10\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b><a href=\"https://blur.io/\" class=\"text-primary\">Blur NFT</a>™ | Home Official Site</b></h3>\n          <div class=\"row card-box align-left\">\n            \n            \n            \n            <div class=\"item features-without-image col-12 active\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Artistic Vision of <a href=\"https://bulr-nft.github.io/\" class=\"text-primary\">Blur NFT</a>: Revolutionizing Digital Ownership and Creativity</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">In the vibrant world of blockchain and digital art, Blur NFT has emerged as a trailblazer, reshaping the landscape of non-fungible tokens (NFTs) and artistic expression. Blur NFT represents a fusion of technology and creativity, offering a unique platform where artists and collectors converge in a decentralized ecosystem. This article explores the key features, artistic vision, and transformative impact of Blur NFT in the realm of digital ownership and creative expression.\n<br>\n<br>Understanding Blur NFT:\n<br>\n<br>Blur NFT is a decentralized platform built on blockchain technology that leverages NFTs to represent ownership of digital art. NFTs, or non-fungible tokens, are unique cryptographic tokens that certify the authenticity and ownership of a specific digital asset, often a piece of digital art. Blur NFT, through its platform, provides a space for artists to tokenize their creations and for collectors to securely acquire and trade these digital assets.\n<br>\n<br>Key Features:\n<br>\n<br>Decentralization and Ownership:\n<br>At the core of Blur NFT is the principle of decentralization. By utilizing blockchain technology, Blur NFT ensures that ownership and authenticity of digital assets are recorded on a transparent and tamper-proof ledger. This decentralized approach empowers artists and collectors by eliminating the need for intermediaries and providing a secure and verifiable record of ownership.\n<br>\n<br>Smart Contracts and Royalties:\n<br>Blur NFT incorporates smart contracts into its platform, allowing artists to embed specific terms and conditions into the NFTs they create. One notable feature is the ability to automate royalty payments. When a digital art piece is resold, the smart contract ensures that the original artist receives a predetermined percentage of the sale, promoting fair compensation for creators even after the initial sale.\n<br>\n<br>Interactivity and Engagement:\n<br>Going beyond the static nature of traditional art, Blur NFT introduces interactivity and engagement features. Some NFTs on the platform may come with additional perks or experiences tied to ownership, creating a dynamic and immersive connection between the collector and the digital art piece.\n<br>\n<br>Community-Centric Marketplace:\n<br>Blur NFT fosters a vibrant and engaged community of artists, collectors, and enthusiasts. The marketplace serves as a hub where users can discover, buy, and sell digital art. This community-centric approach encourages collaboration, discussion, and the sharing of insights within the Blur NFT ecosystem.\n<br>\n<br>Artistic Vision:\n<br>\n<br>Empowering Digital Artists:\n<br>Blur NFT's artistic vision revolves around empowering digital artists to showcase and monetize their work in a decentralized and borderless environment. By providing a platform that facilitates the creation and sale of NFTs, Blur NFT democratizes access to the art world, allowing digital artists from diverse backgrounds to gain recognition and compensation for their creations.\n<br>\n<br>Preserving Digital Authenticity:\n<br>In the digital age, issues of copyright and digital authenticity have become increasingly important. Blur NFT addresses these concerns by leveraging blockchain's immutability to create a verifiable and unforgeable record of ownership. This not only protects the intellectual property of digital artists but also ensures that collectors can trust in the authenticity of the NFTs they acquire.\n<br>\n<br>Promoting Fair Compensation:\n<br>Blur NFT's commitment to smart contract functionality, specifically automated royalty payments, is aligned with the vision of promoting fair compensation for artists. By enabling artists to earn a percentage of secondary sales, Blur NFT recognizes the ongoing value of digital art and ensures that creators share in the financial success of their work.\n<br>\n<br>Fostering a Creative Community:\n<br>Blur NFT sees the potential of NFTs beyond mere transactions; it envisions a thriving creative community. Through forums, events, and collaborations, Blur NFT encourages artists and collectors to connect, share ideas, and collectively contribute to the growth and vibrancy of the digital art space.\n<br>\n<br>Impact on Digital Ownership and Creativity:\n<br>\n<br>Democratizing Access to Art:\n<br>Blur NFT plays a crucial role in democratizing access to art by breaking down traditional barriers. Digital artists, irrespective of their geographical location or background, can tokenize their creations and gain exposure on a global scale. This democratization aligns with the broader vision of making art more accessible and inclusive.\n<br>\n<br>Redefining Digital Ownership:\n<br>Blur NFT contributes to the redefinition of digital ownership. In the traditional digital landscape, ownership is often intangible and easily replicable. With NFTs on the Blur platform, digital ownership becomes a tangible and provable concept, creating a paradigm shift in how individuals perceive and value digital assets.\n<br>\n<br>Monetizing Digital Creativity:\n<br>For digital artists, Blur NFT provides a means to monetize their creativity directly. This shift from traditional models of income for artists—such as gallery representation or freelance work—enables creators to derive income from the direct sale and resale of their digital art pieces, fostering financial independence and sustainability.\n<br>\n<br>Incentivizing Innovation:\n<br>Blur NFT's integration of smart contracts and interactivity incentivizes innovation within the digital art space. Artists are encouraged to experiment with new forms of expression, and collectors are drawn to unique and engaging experiences tied to NFT ownership. This symbiotic relationship fosters a continuous cycle of creativity and exploration.\n<br>\n<br>Challenges and Considerations:\n<br>\n<br>While Blur NFT presents a transformative vision for digital ownership and creativity, the platform also faces certain challenges and considerations. These may include:\n<br>\n<br>Environmental Concerns:\n<br>The energy consumption associated with blockchain technology, especially prominent in proof-of-work consensus mechanisms, has raised environmental concerns. As Blur NFT and other platforms navigate these concerns, the industry is exploring more eco-friendly alternatives, such as proof-of-stake or layer 2 scaling solutions.\n<br>\n<br>Marketplace Congestion:\n<br>The popularity of NFTs has led to congestion on some blockchain networks, affecting transaction costs and speed. As Blur NFT continues to grow, addressing scalability challenges will be crucial to maintaining a smooth and efficient marketplace experience.\n<br>\n<br>Educational Outreach:\n<br>The concept of NFTs and blockchain technology may still be unfamiliar to many potential users. Blur NFT and similar platforms need to invest in educational outreach to ensure that artists and collectors understand the benefits, risks, and technical aspects of participating in the NFT space.\n<br>\n<br>Conclusion:\n<br>\n<br>Blur NFT stands at the intersection of technology and creativity, offering a glimpse into the future of digital ownership and artistic expression. By embracing blockchain's decentralized nature, Blur NFT empowers digital artists, promotes fair compensation, and fosters a dynamic community of creators and collectors. As the platform continues to evolve, it has the potential to reshape the art world, making it more accessible, inclusive, and attuned to the digital age. Blur NFT represents not just a marketplace but a movement—an evolution in the way we perceive, value, and engage with digital art in the 21st century.</p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "tZ9hCn5ZAR",
+          "_anchor": "article07-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
